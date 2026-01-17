@@ -48,10 +48,10 @@ function startEverything() {
   // Mobile specific typing
   if (window.innerWidth < 768) {
     setTimeout(() => {
-      fcMobile.timeout("18", document.querySelector(".day"));
+      fcMobile.timeout("03", document.querySelector(".day"));
     }, 5000);
     setTimeout(() => {
-      fcMobile.timeout("6", document.querySelector(".month"));
+      fcMobile.timeout("02", document.querySelector(".month"));
     }, 6000);
   }
 
