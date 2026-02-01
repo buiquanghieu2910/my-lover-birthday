@@ -1,9 +1,12 @@
 let datetxt = "03 - 02";
-let datatxtletter =
-  "Nhân ngày đặc biệt này, chúc em luôn có thật nhiều sức khỏe để theo đuổi những ước mơ của mình, thật nhiều niềm vui để mỗi ngày trôi qua đều là một ngày đáng nhớ, và thật nhiều may mắn để mọi dự định đều thuận lợi. Mong rằng tuổi mới sẽ mang đến cho em những cơ hội mới, những trải nghiệm đáng giá và những khoảnh khắc hạnh phúc bên gia đình, bạn bè và những người yêu thương.";
+let datatxtletter = 
+`Nhân ngày đặc biệt này, chúc Em luôn có thật nhiều sức khỏe để theo đuổi những ước mơ của mình, 
+thật nhiều niềm vui để mỗi ngày trôi qua đều là một ngày đáng nhớ, và thật nhiều may mắn để mọi dự định đều thuận lợi. 
+Mong rằng tuổi mới sẽ mang đến cho Em những cơ hội mới, những trải nghiệm đáng giá và những khoảnh khắc hạnh phúc bên gia đình, 
+bạn bè và những người yêu thương.`;
 
 // let datatxtletter = "Nhân ngày đặc biệt này, chúc bạn luôn có thật nhiều sức khỏe để theo đuổi những ước mơ của mình.";
-let titleLetter = "Gửi em, người con gái anh yêu thương!";
+let titleLetter = "Gửi Em, Cô gái Anh yêu thương!";
 let charArrDate = datetxt.split("");
 let charArrDateLetter = datatxtletter.split("");
 let charArrTitle = titleLetter.split("");
@@ -297,7 +300,7 @@ let jumpInterval;
 $("#btn__start").on("click", function () {
   $(this).fadeOut(); // Hide button after click
   const container = $("#image-jump-container");
-  const maxImages = 10;
+  const maxImages = 15;
 
   jumpInterval = setInterval(() => {
     // Pick a random image each time
@@ -353,7 +356,7 @@ const fcMobile = mobile();
 const imageContainer = document.querySelector(".image");
 function initSlideshow() {
   imageContainer.innerHTML = ""; // Clear existing
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 5; i++) {
     const img = document.createElement("img");
     img.src = `style/img/image${i}.jpg`;
     img.alt = `Birthday Image ${i}`;
